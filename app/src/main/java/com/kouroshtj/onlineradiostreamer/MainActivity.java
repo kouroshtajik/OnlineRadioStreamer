@@ -17,6 +17,17 @@ public class MainActivity extends AppCompatActivity {
     String stream2 = "https://wpr-ice.streamguys1.com/wpr-music-mp3-96";
     String stream3 = "https://stream.wqxr.org/wqxr-web?nyprBrowserId=2fae6ba98c53a80";
     String stream4 = "https://worldwidefm.out.airtime.pro/worldwidefm_b";
+    String stream5 = "https://usa7.fastcast4u.com/proxy/pghola05?mp=/1";
+    String stream6 = "";
+    String stream7 = "";
+    String stream8 = "";
+    String stream9 = "";
+    String stream10 = "";
+    String stream11 = "";
+    String stream12 = "";
+    String stream13 = "";
+    String stream14 = "";
+    String stream15 = "";
     int channelNumber;
 
 
@@ -49,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         //play and pause button CH 1-------1--------1------1-------1--------1---------1------1------1--------1
         btnPlay1.setOnClickListener(view -> {
+            txtStatus.setText("Buffering");
             if (channelNumber == 1) {
                 txtStatus.setText("channelNumber: " + channelNumber);
                 mediaPlayer.start();
